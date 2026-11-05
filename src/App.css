@@ -1,0 +1,841 @@
+body {
+  margin: 0;
+  background-color: #081426;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+#root {
+  min-height: 100vh;
+}
+.dashboard {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
+}
+header {
+  text-align: centre;
+  margin-bottom: 50px;
+}
+header h1 {
+  color: #60A5FA;
+  font-size: 36px;
+}
+header p {
+  color: #A9BCD4;
+  letter-spacing: 3px;
+}
+main {
+  text-align: left;
+}
+main h2 {
+  color:white;
+}
+main > p {
+  color: #A9BCD4;
+}
+
+.mission-card,
+.progress-card {
+  background-color: #102542;
+  border: 1px solid #1E3A5F;
+  border-radius: 15px;
+  padding: 25px;
+  margin-top: 25px;
+}
+.mission-card p,
+.progress-card p {
+  color: #A9BCD4;
+}
+
+/* PROJECT PHANTOM HOME DASHBOARD */
+
+.home-dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 10px 0 25px;
+}
+
+.home-hero {
+  background: linear-gradient(135deg, #10294a, #071426);
+  border: 1px solid #24476d;
+  border-radius: 20px;
+  padding: 25px 20px;
+}
+
+.home-eyebrow {
+  color: #60a5fa;
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.home-hero h2 {
+  font-size: 26px;
+  margin: 15px 0 8px;
+  color: #fff;
+}
+
+.home-hero p {
+  color: #a9bfd9;
+}
+
+.home-quote {
+  display: block;
+  margin-top: 22px;
+  color: #60a5fa;
+  font-size: 13px;
+  font-style: italic;
+}
+
+.sync-status {
+  color: #60a5fa !important;
+  font-size: 12px;
+}
+
+.home-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.home-stat-card,
+.home-panel {
+  background: #0d1d32;
+  border: 1px solid #203956;
+  border-radius: 16px;
+  padding: 18px;
+}
+
+.home-stat-card span {
+  display: block;
+  color: #91a9c5;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.home-stat-card strong {
+  display: block;
+  color: #60a5fa;
+  font-size: 30px;
+  margin: 10px 0 3px;
+}
+
+.home-stat-card small,
+.focus-row small {
+  color: #91a9c5;
+  font-size: 11px;
+}
+
+.home-panel h3 {
+  color: #60a5fa;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin: 0 0 16px;
+}
+
+.home-section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-section-heading span {
+  color: #60a5fa;
+  font-weight: bold;
+}
+
+.home-progress-track {
+  height: 10px;
+  background: #203956;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.home-progress-fill {
+  height: 100%;
+  background: #60a5fa;
+  border-radius: 20px;
+  transition: width 0.3s ease;
+}
+
+.home-panel > p {
+  color: #91a9c5;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.home-quick-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.home-quick-grid button {
+  background: #142b47;
+  border: 1px solid #29496d;
+  border-radius: 12px;
+  color: white;
+  padding: 16px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  align-items: center;
+}
+
+.home-quick-grid button span {
+  font-size: 23px;
+}
+
+.focus-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 0;
+  border-bottom: 1px solid #203956;
+}
+
+.focus-row:last-child {
+  border-bottom: none;
+}
+
+.focus-row > span {
+  font-size: 23px;
+}
+
+.focus-row strong,
+.focus-row small {
+  display: block;
+}
+
+.focus-row strong {
+  color: white;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+/* PHANTOM CALENDAR & MISSIONS */
+
+.calendar-dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 10px 0 25px;
+}
+
+.calendar-hero {
+  background: linear-gradient(135deg, #10294a, #071426);
+  border: 1px solid #24476d;
+  border-radius: 20px;
+  padding: 23px 20px;
+}
+
+.calendar-hero > span,
+.calendar-heading > div > span {
+  color: #60a5fa;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.calendar-hero h2 {
+  color: white;
+  font-size: 25px;
+  margin: 13px 0 7px;
+}
+
+.calendar-hero p {
+  color: #a9bfd4;
+  font-size: 13px;
+}
+
+.calendar-panel {
+  background: #0d1d32;
+  border: 1px solid #203956;
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.calendar-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.calendar-heading h3 {
+  color: white;
+  margin: 7px 0 0;
+}
+
+.mission-count {
+  color: #60a5fa;
+  background: #142b47;
+  padding: 9px 13px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.calendar-panel label {
+  display: block;
+  color: #91a9c5;
+  font-size: 10px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.phantom-date-input,
+.mission-input-row input {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  background: #081426;
+  color: white;
+  border: 1px solid #29496d;
+  border-radius: 10px;
+  padding: 13px;
+  font-size: 14px;
+}
+
+.mission-input-row {
+  display: flex;
+  gap: 9px;
+  margin: 20px 0;
+}
+
+.mission-input-row button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0 17px;
+  font-weight: bold;
+}
+
+.mission-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.mission-item {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  background: #122640;
+  border: 1px solid #203956;
+  border-radius: 11px;
+  padding: 13px 10px;
+}
+
+.mission-number {
+  color: #60a5fa;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.mission-item input {
+  width: 18px;
+  height: 18px;
+  accent-color: #60a5fa;
+}
+
+.mission-name {
+  flex: 1;
+  min-width: 0;
+  color: #dce8f7;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.mission-completed .mission-name {
+  text-decoration: line-through;
+  color: #64748b;
+}
+
+.mission-delete {
+  background: #48202b;
+  color: #fca5a5;
+  border: none;
+  border-radius: 7px;
+  font-size: 19px;
+  padding: 3px 10px;
+}
+
+.empty-missions {
+  color: #91a9c5;
+  font-size: 13px;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.mission-footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 22px 0 10px;
+}
+
+.mission-footer span {
+  color: #91a9c5;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.mission-footer strong {
+  color: #60a5fa;
+}
+
+/* PHANTOM JOURNAL */
+
+.journal-dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 10px 0 25px;
+}
+
+.journal-hero {
+  background: linear-gradient(135deg, #10294a, #071426);
+  border: 1px solid #24476d;
+  border-radius: 20px;
+  padding: 23px 20px;
+}
+
+.journal-hero > span,
+.journal-heading > div > span {
+  color: #60a5fa;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.journal-hero h2 {
+  color: white;
+  font-size: 26px;
+  margin: 13px 0 7px;
+}
+
+.journal-hero p {
+  color: #a9bfd4;
+  font-size: 13px;
+}
+
+.journal-panel {
+  background: #0d1d32;
+  border: 1px solid #203956;
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.journal-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.journal-heading h3 {
+  color: white;
+  margin: 8px 0 0;
+  font-size: 17px;
+}
+
+.journal-icon {
+  font-size: 25px;
+  background: #142b47;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.journal-panel > label {
+  display: block;
+  color: #91a9c5;
+  font-size: 10px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.journal-writing-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 0 12px;
+}
+
+.journal-writing-heading h3 {
+  color: white;
+  font-size: 15px;
+  margin: 0;
+}
+
+.journal-writing-heading span {
+  color: #60a5fa;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+.journal-textarea {
+  box-sizing: border-box;
+  width: 100%;
+  background: #081426;
+  border: 1px solid #29496d;
+  border-radius: 12px;
+  padding: 16px;
+  color: #e2e8f0;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  resize: vertical;
+  min-height: 220px;
+}
+
+.journal-textarea:focus {
+  outline: none;
+  border-color: #60a5fa;
+}
+
+.journal-save-status {
+  color: #91a9c5;
+  font-size: 11px;
+  margin-top: 12px;
+}
+
+.journal-save-status span {
+  color: #60a5fa;
+  margin-right: 5px;
+}
+
+/* PHANTOM PROGRESS CENTRE */
+
+.progress-dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 10px 0 25px;
+}
+
+.progress-hero {
+  background: linear-gradient(135deg, #10294a, #071426);
+  border: 1px solid #24476d;
+  border-radius: 20px;
+  padding: 23px 20px;
+}
+
+.progress-hero > span {
+  color: #60a5fa;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.progress-hero h2 {
+  color: white;
+  font-size: 26px;
+  margin: 13px 0 7px;
+}
+
+.progress-hero p {
+  color: #a9bfd4;
+  font-size: 13px;
+}
+
+.progress-main-card {
+  background: #0d1d32;
+  border: 1px solid #203956;
+  border-radius: 20px;
+  padding: 25px 18px;
+  text-align: center;
+}
+
+.progress-label {
+  color: #60a5fa;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.progress-circle {
+  width: 165px;
+  height: 165px;
+  border-radius: 50%;
+  margin: 25px auto;
+  display: grid;
+  place-items: center;
+  background: conic-gradient(
+    #60a5fa calc(var(--progress, 0) * 1%),
+    #203956 0
+  );
+  position: relative;
+}
+
+.progress-circle::before {
+  content: "";
+  position: absolute;
+  width: 137px;
+  height: 137px;
+  background: #0d1d32;
+  border-radius: 50%;
+}
+
+.progress-circle-inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.progress-circle-inner strong {
+  color: white;
+  font-size: 34px;
+}
+
+.progress-circle-inner small {
+  color: #91a9c5;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+.progress-main-card h3 {
+  color: white;
+  font-size: 17px;
+}
+
+.progress-main-card p {
+  color: #91a9c5;
+  font-size: 12px;
+}
+
+.progress-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 9px;
+}
+
+.progress-stat {
+  background: #0d1d32;
+  border: 1px solid #203956;
+  border-radius: 14px;
+  padding: 14px 7px;
+  text-align: center;
+  min-width: 0;
+}
+
+.progress-stat span {
+  display: block;
+  font-size: 20px;
+}
+
+.progress-stat strong {
+  display: block;
+  color: #60a5fa;
+  font-size: 24px;
+  margin: 8px 0 4px;
+}
+
+.progress-stat small {
+  color: #91a9c5;
+  font-size: 10px;
+}
+
+.progress-breakdown {
+  background: #0d1d32;
+  border: 1px solid #203956;
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.progress-breakdown h3 {
+  color: #60a5fa;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.progress-breakdown > p {
+  color: #91a9c5;
+  font-size: 12px;
+  margin-bottom: 18px;
+}
+
+.breakdown-row {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 13px 0;
+  border-bottom: 1px solid #203956;
+}
+
+.breakdown-row:last-child {
+  border-bottom: none;
+}
+
+.breakdown-number {
+  color: #60a5fa;
+  font-size: 10px;
+}
+
+.breakdown-name {
+  color: #dce8f7;
+  font-size: 12px;
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.breakdown-done,
+.breakdown-pending {
+  font-size: 9px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.breakdown-done {
+  color: #4ade80;
+}
+
+.breakdown-pending {
+  color: #fbbf24;
+}
+/* PHANTOM MORE / CONTROL CENTRE */
+
+.more-dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 10px 0 25px;
+}
+
+.more-hero {
+  background: linear-gradient(135deg, #10294a, #071426);
+  border: 1px solid #24476d;
+  border-radius: 20px;
+  padding: 23px 20px;
+}
+
+.more-hero > span {
+  color: #60a5fa;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.more-hero h2 {
+  color: white;
+  font-size: 26px;
+  margin: 13px 0 7px;
+}
+
+.more-hero p {
+  color: #a9bfd4;
+  font-size: 13px;
+}
+
+.more-panel {
+  background: #0d1d32;
+  border: 1px solid #203956;
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.more-panel-heading {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 22px;
+}
+
+.more-panel-heading > span {
+  font-size: 24px;
+  background: #142b47;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.more-panel-heading h3 {
+  color: #60a5fa;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin: 0 0 5px;
+}
+
+.more-panel-heading small {
+  color: #91a9c5;
+  font-size: 11px;
+}
+
+.account-info {
+  background: #081426;
+  border: 1px solid #203956;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.account-info > span {
+  color: #60a5fa;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+.account-info p {
+  color: white;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+  margin-bottom: 0;
+}
+
+.phantom-signout {
+  width: 100%;
+  margin-top: 15px;
+  padding: 14px;
+  border: 1px solid #7f1d1d;
+  border-radius: 11px;
+  background: #481d2a;
+  color: #fecaca;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.phantom-signout span {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.phantom-brand {
+  background: linear-gradient(135deg, #10294a, #071426);
+  border: 1px solid #24476d;
+  border-radius: 14px;
+  padding: 25px 15px;
+  text-align: center;
+}
+
+.phantom-brand h2 {
+  color: #60a5fa;
+  font-size: 30px;
+  letter-spacing: 5px;
+  margin: 0 0 10px;
+}
+
+.phantom-brand p {
+  color: white;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.phantom-brand-line {
+  height: 1px;
+  background: #29496d;
+  margin: 18px 0;
+}
+
+.phantom-brand small {
+  color: #91a9c5;
+  font-size: 11px;
+}
+
+.more-version {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 5px 3px;
+  color: #64748b;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
